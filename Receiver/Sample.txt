@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////
+// XmlReader.cpp - Parse XML strings                                 //
+// ver 2.3                                                           //
+// Language:    Visual C++, Visual Studio 2010, SP1                  //
+// platform:    Toshiba Portege R705, Windows 7, Home Premium, SP1   //
+// Application: Summer 2011 Projects                                 //
+// Author:      Jim Fawcett, Syracuse University, CST 4-187          //
+//              www.lcs.syr.edu/faculty/fawcett, (315) 443-3948      //
+///////////////////////////////////////////////////////////////////////
+
+#include "XmlReader.h"
+#include <ctype.h>
+#include <stack>
+#include <utility>
+#include <iostream>
+#include <algorithm>
+#include <string>
+
+XmlReader::XmlReader(const std::string& xml) 
+  : _xml(xml), _position(0), localposition(0) {}
+
+//----< helper identifies markup chars >-----------------------------
+
+bool specialChar(char ch)
+{
+  bool #include <string>
+  
